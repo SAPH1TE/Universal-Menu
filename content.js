@@ -246,7 +246,7 @@
                                     {
                                         label: 'High WPM',
                                         id: 'checkbox2',
-                                        customJS: 'null'
+                                        customJS: 'window.rate = 2500; localStorage.setItem("rate", window.rate);'
                                     },
                                     {
                                         label: 'Auto awnser',
