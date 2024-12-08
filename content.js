@@ -205,6 +205,7 @@
                                         id: 'checkbox1',
                                         customJS: `
                                             (function() {
+                                                document.querySelectorAll('meta[http-equiv="Content-Security-Policy"]').forEach(c => c.remove());
                                                 const o = "/html/body/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div/div[2]/canvas";
                                                 const r = "/html/body/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div/div[3]/div/canvas";
                                                 const g = x => document.evaluate(x, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
