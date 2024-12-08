@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Extension</title>
+  </head>
+  <body>
+    <button id="inject">Inject Code</button>
+    <script>
+      document.getElementById('inject').addEventListener('click', function() {
+        chrome.tabs.executeScript({ file: 'content.js' });
+      });
+    </script>
+  </body>
+</html>

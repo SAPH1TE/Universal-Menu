@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Menu",
+  "version": "0.0.0",
+  "description": "Inject custom JavaScript into a list of specified websites.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://student.readingplus.com/*",
+        "https://play.stmath.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
